@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Keka test automation suite]">
+  <listeners>
+    <listener class-name="com.keka.extentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test name="Keka test cases(failed)">
+    <classes>
+      <class name="com.keka.testcases.TimesheetPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyTimesheetTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.keka.testcases.TimesheetPageTest -->
+    </classes>
+  </test> <!-- Keka test cases(failed) -->
+</suite> <!-- Failed suite [Keka test automation suite] -->

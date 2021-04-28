@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Keka test automation suite">
+ 
+ <listeners>
+ <listener class-name="com.keka.extentReportListener.ExtentReportListener"></listener>
+ </listeners>
+ 
+  <test thread-count="5" name="Keka test cases">
+     <classes>
+      <class name="com.keka.testcases.LoginPageTest"/>
+      <class name="com.keka.testcases.HomePageTest"/>
+      <class name="com.keka.testcases.TimesheetPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
