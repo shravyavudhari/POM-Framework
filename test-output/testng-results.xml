@@ -1,389 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="0" ignored="0" total="8" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Keka test automation suite" duration-ms="125836" started-at="2021-04-27T15:06:02Z" finished-at="2021-04-27T15:08:08Z">
+  <suite name="Keka test automation suite" duration-ms="156505" started-at="2021-04-28T15:54:27Z" finished-at="2021-04-28T15:57:04Z">
     <groups>
     </groups>
-    <test name="Keka test cases" duration-ms="125836" started-at="2021-04-27T15:06:02Z" finished-at="2021-04-27T15:08:08Z">
+    <test name="Keka test cases" duration-ms="156505" started-at="2021-04-28T15:54:27Z" finished-at="2021-04-28T15:57:04Z">
       <class name="com.keka.testcases.TimesheetPageTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="setUp" is-config="true" duration-ms="30459" started-at="2021-04-27T20:37:18Z" finished-at="2021-04-27T20:37:49Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=90.0.4430.85)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MTLP-983', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\shravyav\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03bfd8b76739b664d93421c8ca5bee64]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=90.0.4430.85)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MTLP-983', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\shravyav\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03bfd8b76739b664d93421c8ca5bee64
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:416)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.keka.pages.LoginPage.login(LoginPage.java:41)
-	at com.keka.testcases.TimesheetPageTest.setUp(TimesheetPageTest.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="setUp" is-config="true" duration-ms="12953" started-at="2021-04-28T21:25:27Z" finished-at="2021-04-28T21:25:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="verifyTimesheetTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="verifyTimesheetTest" duration-ms="2" started-at="2021-04-27T20:37:49Z" data-provider="getTimesheetTestData" finished-at="2021-04-27T20:37:49Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=90.0.4430.85)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MTLP-983', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\shravyav\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03bfd8b76739b664d93421c8ca5bee64]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=90.0.4430.85)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MTLP-983', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\shravyav\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03bfd8b76739b664d93421c8ca5bee64
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:416)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.keka.pages.LoginPage.login(LoginPage.java:41)
-	at com.keka.testcases.TimesheetPageTest.setUp(TimesheetPageTest.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="verifyTimesheetTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="verifyTimesheetTest" duration-ms="7471" started-at="2021-04-28T21:25:40Z" data-provider="getTimesheetTestData" finished-at="2021-04-28T21:25:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Monday]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[VTS 2.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01_Customer Billing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Monday comments]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTimesheetTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-27T20:37:49Z" finished-at="2021-04-27T20:37:49Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="tearDown" is-config="true" duration-ms="886" started-at="2021-04-28T21:25:47Z" finished-at="2021-04-28T21:25:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="setUp" is-config="true" duration-ms="13281" started-at="2021-04-28T21:25:48Z" finished-at="2021-04-28T21:26:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="verifyTimesheetTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="verifyTimesheetTest" duration-ms="0" started-at="2021-04-27T20:37:49Z" data-provider="getTimesheetTestData" finished-at="2021-04-27T20:37:49Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=90.0.4430.85)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MTLP-983', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\shravyav\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03bfd8b76739b664d93421c8ca5bee64]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=90.0.4430.85)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MTLP-983', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\shravyav\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03bfd8b76739b664d93421c8ca5bee64
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:416)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.keka.pages.LoginPage.login(LoginPage.java:41)
-	at com.keka.testcases.TimesheetPageTest.setUp(TimesheetPageTest.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="verifyTimesheetTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="verifyTimesheetTest" duration-ms="8470" started-at="2021-04-28T21:26:01Z" data-provider="getTimesheetTestData" finished-at="2021-04-28T21:26:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tuesday]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[VTS 2.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01_Customer Billing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Tuesday comments]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTimesheetTest -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="setUp" is-config="true" duration-ms="0" started-at="2021-04-27T20:37:49Z" finished-at="2021-04-27T20:37:49Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="tearDown" is-config="true" duration-ms="930" started-at="2021-04-28T21:26:10Z" finished-at="2021-04-28T21:26:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="setUp" is-config="true" duration-ms="23427" started-at="2021-04-28T21:26:11Z" finished-at="2021-04-28T21:26:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="verifyTimesheetTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="verifyTimesheetTest" duration-ms="0" started-at="2021-04-27T20:37:49Z" data-provider="getTimesheetTestData" finished-at="2021-04-27T20:37:49Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=90.0.4430.85)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MTLP-983', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\shravyav\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03bfd8b76739b664d93421c8ca5bee64]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=90.0.4430.85)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MTLP-983', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\shravyav\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03bfd8b76739b664d93421c8ca5bee64
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:416)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.keka.pages.LoginPage.login(LoginPage.java:41)
-	at com.keka.testcases.TimesheetPageTest.setUp(TimesheetPageTest.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="verifyTimesheetTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="verifyTimesheetTest" duration-ms="8444" started-at="2021-04-28T21:26:34Z" data-provider="getTimesheetTestData" finished-at="2021-04-28T21:26:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wednesday]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[VTS 2.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[01_Customer Billing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Wednesday comments]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTimesheetTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.TimesheetPageTest@780cb77]" name="tearDown" is-config="true" duration-ms="913" started-at="2021-04-28T21:26:43Z" finished-at="2021-04-28T21:26:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.keka.testcases.TimesheetPageTest -->
       <class name="com.keka.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="setUp" is-config="true" duration-ms="24192" started-at="2021-04-27T20:36:02Z" finished-at="2021-04-27T20:36:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="setUp" is-config="true" duration-ms="16212" started-at="2021-04-28T21:24:27Z" finished-at="2021-04-28T21:24:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="verifyHomePageTitleTest" duration-ms="17" started-at="2021-04-27T20:36:26Z" finished-at="2021-04-27T20:36:26Z">
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="verifyHomePageTitleTest" duration-ms="33" started-at="2021-04-28T21:24:43Z" finished-at="2021-04-28T21:24:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="tearDown" is-config="true" duration-ms="913" started-at="2021-04-27T20:36:26Z" finished-at="2021-04-27T20:36:27Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="tearDown" is-config="true" duration-ms="966" started-at="2021-04-28T21:24:43Z" finished-at="2021-04-28T21:24:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="setUp" is-config="true" duration-ms="25035" started-at="2021-04-27T20:36:27Z" finished-at="2021-04-27T20:36:52Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="setUp" is-config="true" duration-ms="25379" started-at="2021-04-28T21:24:44Z" finished-at="2021-04-28T21:25:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyMeLinkTest()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="verifyMeLinkTest" duration-ms="1051" started-at="2021-04-27T20:36:52Z" finished-at="2021-04-27T20:36:53Z">
+        <test-method status="PASS" signature="verifyMeLinkTest()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="verifyMeLinkTest" duration-ms="646" started-at="2021-04-28T21:25:10Z" finished-at="2021-04-28T21:25:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMeLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="tearDown" is-config="true" duration-ms="903" started-at="2021-04-27T20:36:53Z" finished-at="2021-04-27T20:36:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="tearDown" is-config="true" duration-ms="930" started-at="2021-04-28T21:25:10Z" finished-at="2021-04-28T21:25:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="setUp" is-config="true" duration-ms="22136" started-at="2021-04-27T20:36:54Z" finished-at="2021-04-27T20:37:16Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="setUp" is-config="true" duration-ms="13291" started-at="2021-04-28T21:25:11Z" finished-at="2021-04-28T21:25:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyProfileNameTest()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="verifyProfileNameTest" duration-ms="322" started-at="2021-04-27T20:37:16Z" finished-at="2021-04-27T20:37:17Z">
+        <test-method status="PASS" signature="verifyProfileNameTest()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="verifyProfileNameTest" duration-ms="502" started-at="2021-04-28T21:25:25Z" finished-at="2021-04-28T21:25:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProfileNameTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="tearDown" is-config="true" duration-ms="893" started-at="2021-04-27T20:37:17Z" finished-at="2021-04-27T20:37:18Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.HomePageTest@16aa0a0a]" name="tearDown" is-config="true" duration-ms="936" started-at="2021-04-28T21:25:25Z" finished-at="2021-04-28T21:25:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.keka.testcases.HomePageTest -->
       <class name="com.keka.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="setUp" is-config="true" duration-ms="4288" started-at="2021-04-27T20:37:49Z" finished-at="2021-04-27T20:37:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="setUp" is-config="true" duration-ms="4903" started-at="2021-04-28T21:26:44Z" finished-at="2021-04-28T21:26:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="loginPageTitleTest" duration-ms="17" started-at="2021-04-27T20:37:53Z" finished-at="2021-04-27T20:37:53Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="loginPageTitleTest" duration-ms="17" started-at="2021-04-28T21:26:49Z" finished-at="2021-04-28T21:26:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="tearDown" is-config="true" duration-ms="933" started-at="2021-04-27T20:37:53Z" finished-at="2021-04-27T20:37:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="tearDown" is-config="true" duration-ms="892" started-at="2021-04-28T21:26:49Z" finished-at="2021-04-28T21:26:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="setUp" is-config="true" duration-ms="4057" started-at="2021-04-27T20:37:54Z" finished-at="2021-04-27T20:37:58Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="setUp" is-config="true" duration-ms="3609" started-at="2021-04-28T21:26:49Z" finished-at="2021-04-28T21:26:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="loginTest" duration-ms="8927" started-at="2021-04-27T20:37:58Z" finished-at="2021-04-27T20:38:07Z">
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="loginTest" duration-ms="9644" started-at="2021-04-28T21:26:53Z" finished-at="2021-04-28T21:27:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="tearDown" is-config="true" duration-ms="948" started-at="2021-04-27T20:38:07Z" finished-at="2021-04-27T20:38:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.keka.testcases.LoginPageTest@1d548a08]" name="tearDown" is-config="true" duration-ms="881" started-at="2021-04-28T21:27:03Z" finished-at="2021-04-28T21:27:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
